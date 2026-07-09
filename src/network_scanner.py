@@ -1,4 +1,4 @@
-lass NetworkScanner:
+class NetworkScanner:
     def __init__(self, red_base: str = "192.168.1."):
         self.red = red_base
         self.dispositivos_activos = []
