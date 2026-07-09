@@ -1,0 +1,75 @@
+_________________________--
+CREAR PROYECTO
+tarea No.1 mi-repositorio-automatizacion
+jueves-09-07-2026 02h27
+_________________________--
+
+instalar:
+VSC visual studio code
+PYTHON EN VSC
+instalar Python
+instalar pylance
+pip install pytest
+
+requisitos.txt
+packaging==26.2
+pluggy==1.6.0
+Pygments==2.20.0
+pytest==9.1.1
+
+ejecutar desde consola:
+cd .venv
+gitignore   //poblamos el archivo
+cd..
+
+cd src
+
+New-Item src\__init__.py
+creamos archivo calculator.py //poblamos el archivo
+
+New-Item -ItemType Directory pruebas
+New-Item pruebas\test_calculator.py
+test_calculator.py    //poblamos el archivo
+
+desde consola, desde la raíz:
+python -m pytest
+
+====== 2 passed in 0.02s ======
+
+Al ejecutar python -m pytest, 
+le indicaste explícitamente a Python que añadiera el directorio raíz al entorno de búsqueda de módulos,
+logrando que reconociera la carpeta src y pasara las dos pruebas automatizadas (test_sumar y test_restar) al 100%. 
+¡Felicitaciones, la automatización del taller ya está funcionando impecable localmente!
+
+pip freeze > requisitos.txt   //Para que quede registrado que usas pytest, ejecuta este comando en tu terminal (asegúrate de seguir en la raíz del proyecto)
+
+
+Actualizar GitHub
+
+Migración limpia al nuevo repositorio definitivo en cuenta de GitHub
+
+git add .
+git commit -m "Fix: Solucionado path de pytest y generado archivo de requisitos"
+git push origin main
+
+//enlazar proyecto local de VS Code (taller_No_1_Automatizacion_Software_Prueba_1) a esta nueva URL remota y subir los archivos de forma limpia.
+
+//git remote set-url origin https://github.com/JcordovaDev22/Automatizacion_de_Software_2026.git
+
+primero crear el archivo: YAML  //el disparador para que ocurra todo desde VSC HACIA GITHUB
+
+
+INICIALIZAR GITHUB
+__________________
+git init    //Inicializa el repositorio
+git add .   //Añade tus archivos al preparador
+git commit -m "Primer commit"   //Crear commit
+git remote add origin https://github.com   //Vincula tu repositorio remoto (reemplaza con el enlace real de tu GitHub)
+
+git remote add origin https://github.com/JcordovaDev22/Automatizacion_de_Software_2026
+
+git push -u origin main   //Sube tu código
+
+git branch -M main
+git push -u origin main
+git status
